@@ -1,7 +1,3 @@
-<?
-include 'cabecera_lateral_2.php';
-?>
-
 <style type="text/css" media="screen">
 <!--
 .cc,.ccb,.ccm{padding:1px;padding-left:6px;padding-right:6px;font-family:monospace;}
@@ -9,9 +5,7 @@ include 'cabecera_lateral_2.php';
 .ccm{text-align:center;}
 -->
 </style>
-
 <h1>Tabla de la fecha y hora en las principales ciudades del mundo.</h1><br />
-
 <div id="clock_disp"></div><br />
 <script type="text/javascript">
 //<![CDATA[
@@ -43,7 +37,3 @@ d.setTime(d.getTime()+hour);}
 old_offset=offset;setTimeout('update_clock()',990);}
 //]]>
 </script>
-
-<?
-include 'estatico.php';
-?>
