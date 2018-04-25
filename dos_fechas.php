@@ -196,7 +196,7 @@ if(isset($_POST['enviar'])){
 		}
 	}
 	if($mensaje!="FECHA INV&Aacute;LIDA" && $_POST['anio_anterior']==$anyioactual&& $_POST['mes_principio']==$mesactual&&$_POST['dia_principio']==$diaactual){
-		print '<tr><td style="font-size:30px;color:#2E7BF9;font-weight:bold;">Faltan <span style="font-size:30px;color:red;">'.$mensaje."</span><hr/></td></tr>";
+		print '<tr><td style="font-size:30px;color:#2E7BF9;font-weight:bold;">Falta <span style="font-size:30px;color:red;">'.$mensaje."</span><hr/></td></tr>";
 	}
 	else{
 		print '<tr><td style="font-size:30px;color:red;font-weight:bold;">'.$mensaje."<hr/></td></tr>";		
