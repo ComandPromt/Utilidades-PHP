@@ -1,6 +1,3 @@
-<?
-include 'cabecera_lateral_2.php';
-?>
 <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data"> 
  <center>
 	 <strong>URL </strong> <input name="url" type="text" value="http://"> 
@@ -63,6 +60,3 @@ print '</textarea>
        }
     });
  </script>
-<?
-include 'estatico.php';
-?>
