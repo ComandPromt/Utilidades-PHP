@@ -259,7 +259,7 @@ print '	<tr>
 					<option value="11">Noviembre</option>
 					<option value="12">Diciembre</option>
 				</select>
-				<input style="text-align:center;margin:auto;" name="anio_anterior" type="text" value="'.$anyioactual.'" /><br/><br/>
+				<input style="text-align:center;margin:auto;" name="anio_anterior" type="number" value="'.$anyioactual.'" /><br/><br/>
 			</td>
 		</tr>
 		<tr>
@@ -318,7 +318,7 @@ print '	<tr>
 					<option value="11">Noviembre</option>
 					<option value="12">Diciembre</option>
 				</select>
-				<input style="text-align:center;margin:auto;" type="text" name="anio_posterior" value="'.$anyioactual.'" /><br/><br/>
+				<input style="text-align:center;margin:auto;" type="number" name="anio_posterior" value="'.$anyioactual.'" /><br/><br/>
 			</td>
 		</tr>
 		<tr>
