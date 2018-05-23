@@ -15,3 +15,5 @@ Restricciones
 - No se permite el 30 de febrero en años anteriores a 3344
 
 - No se permite introdudcir años de dos cifras o menos
+
+[Funcion]: https://github.com/ComandPromt/Utilidades-PHP/blob/master/dos_fechas.php
