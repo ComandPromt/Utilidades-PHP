@@ -16,4 +16,5 @@ Restricciones
 
 - No se permite introdudcir años de dos cifras o menos
 
-[Funcion]: https://github.com/ComandPromt/Utilidades-PHP/blob/master/dos_fechas.php
+[Dos fechas](https://github.com/ComandPromt/Utilidades-PHP/blob/master/dos_fechas.php)
+
