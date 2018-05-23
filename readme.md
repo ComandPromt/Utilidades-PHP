@@ -54,10 +54,6 @@ Restricciones
  - Extrae el código fuente de página
 [Extraer el codigo fuente de una pagina](https://github.com/ComandPromt/Utilidades-PHP/blob/master/codigo_fuente_de_pagina.php)
 
- # Consecutivos
- - Extrae el número de una BD
-[Consecutivos](https://github.com/ComandPromt/Utilidades-PHP/blob/master/consecutivos.php)
-
  # Conversor de grados Celcius a Farengeith y viceversa
  - Extrae el número de una BD
 [Celcius 2 Farengeith](https://github.com/ComandPromt/Utilidades-PHP/blob/master/grados_celcius_to_farengeith.php)
@@ -68,5 +64,4 @@ Restricciones
 
  # Extraer valores de un select sin formulario
 [Extraer valores de select sin formulario](https://github.com/ComandPromt/Utilidades-PHP/blob/master/select_to_php_none_form.php)
-
  
