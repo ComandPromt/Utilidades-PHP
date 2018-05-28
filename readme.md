@@ -65,3 +65,12 @@ Restricciones
  # Extraer valores de un select sin formulario
 [Extraer valores de select sin formulario](https://github.com/ComandPromt/Utilidades-PHP/blob/master/select_to_php_none_form.php)
  
+ # Subida de ficheros
+ - Create a folder called uploads
+ - Crea una carpeta llama uploads
+[Subida de ficheros con formularios](https://github.com/ComandPromt/Utilidades-PHP/blob/master/subir.php)
+
+# Subida múltiple
+- Sube varios ficheros a través de un formulario
+[Subida múltiple](https://github.com/ComandPromt/Utilidades-PHP/blob/master/subida_multiple.php)
+
