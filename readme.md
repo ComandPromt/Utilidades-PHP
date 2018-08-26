@@ -162,3 +162,81 @@ function mostrar_codigo($file){
 } 
 mostrar_codigo("archivo.php"); 
 ```
+
+# Funcion Recoge
+```php
+//Funcion para eliminar los caracteres especiales enviador por formulario
+//Tambien elimina los espacios en blanco antes y despues del texto introducido en dicho formulario
+
+function recoge($var,$var2){
+    $tmp = (isset($_REQUEST[$var]))
+        ? trim(htmlspecialchars($_REQUEST[$var], ENT_QUOTES, "UTF-8"))
+        : "";
+		
+		if($var2==""){
+			header("location:#");
+			exit();
+		}
+		
+		if($tmp==""){
+			//Hemos dejado en blanco el input y nos redirecciona a la misma pagina
+			header("location:$var2");
+			exit();
+		}
+		
+		else
+		{
+			return $tmp;
+		}
+}
+
+// Primer parametro: el nombre del input del formulario 
+// Segundo parametro: el nombre del formulario
+// Si el formualario y la funcion estan en el mismo archivo
+// Devemos dejar en blanco el segundo parametro ej. recoge("nombre_input","");
+
+print $nombre   = recoge("nombre","formulario.php");
+```
+
+# Pasar la primera letra a mayuscula
+
+```php
+function pasar_la_primera_letra_a_mayuscula($letra){
+
+$letra=trim($letra);
+
+$letra[0]=strtoupper($letra[0]);
+
+for($i=1;$i<=strlen($letra)-1;$i++){
+	
+if(ctype_upper($letra[$i])){
+$letra[$i]=strtolower($letra[$i]);	
+
+}
+
+}
+
+return $letra;
+
+}
+
+//Llamada a la funcion
+//$palabra=pasar_la_primera_letra_a_mayuscula("pRueBA");
+//print $palabra;
+```
+
+# Comprobar enlace en linea
+
+```php
+function verificar_url($url){ 
+    //abrimos el archivo en lectura 
+    $id = @fopen($url,"r"); 
+    //hacemos las comprobaciones 
+    if ($id) $abierto = true; 
+    else $abierto = false; 
+    //cerramos el archivo 
+    @fclose($id); 
+    //devolvemos el valor 
+    return $abierto; 
+}
+```
