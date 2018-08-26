@@ -78,11 +78,15 @@ Restricciones
 ```php
 function es_entero($number){
 
-$number = explode(".",$number); 
+ $number = explode(".",$number); 
 
-if ($number[1] =="") {return true;}
+ if ($number[1] =="") {
+  return true;
+ }
 
-else {return false;} 
+ else {
+  return false;
+ } 
  
 }
 
