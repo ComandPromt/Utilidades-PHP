@@ -91,4 +91,47 @@ function es_entero($number){
 }
 
 ```
+# Funcion Ordenar Numeros
+```php
+function ordenar_numeros($porciones,$separador){
+	
+	$porciones = explode($separador, $porciones);
+	
+	$dom=count($porciones);
+	
+	for ($i=0;$i<$dom;$i++){ 
+	
+	for($j=0;$j<count($porciones);$j++){
+		
+			if ($porciones[$i]< $porciones[$j]){
+				
+					$temp = $porciones[$i];
+					
+					$porciones[$i]=$porciones[$j];
+					
+					$porciones[$j]=$temp; 
+			} 
+	} 
+	
+	}
+	
+	$numeros=implode ($porciones);
+	return $numeros;
+
+}
+
+//Llamada a la funcion
+
+//Debemos llamar a la funcion con los numeros que queramos
+
+//Y el separador que queramos,eso si, el separador tiene
+
+//Que ser el mismo en los dos parametros,en este caso
+
+//El separador es -
+
+//print ordenar_numeros("4-2-6-1-3-5","-");
+
+//Devolvera 123456
+```
 
