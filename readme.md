@@ -74,3 +74,17 @@ Restricciones
 - Sube varios ficheros a través de un formulario
 [Subida múltiple](https://github.com/ComandPromt/Utilidades-PHP/blob/master/subida_multiple.php)
 
+# Funcion esEntero
+```php
+function es_entero($number){
+
+$number = explode(".",$number); 
+
+if ($number[1] =="") {return true;}
+
+else {return false;} 
+ 
+}
+
+```
+
