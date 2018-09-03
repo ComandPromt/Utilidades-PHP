@@ -240,3 +240,9 @@ function verificar_url($url){
     return $abierto; 
 }
 ```
+# Contiene cadena
+```php
+function contiene_palabra($texto, $palabra){
+    return preg_match('*\b' . preg_quote($palabra) . '\b*i', $texto);
+}
+```
