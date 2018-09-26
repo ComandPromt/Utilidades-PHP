@@ -45,7 +45,7 @@ if (isset($_POST['enviar'])) {
         }
 
         if (!file_exists($_POST['nombre'])) {
-            mkdir($_POST['nombre'], 0777);
+            mkdir($_POST['nombre'], 0777,true);
         }
 
         for ($x = 0; $x < count($palabras); $x++) {
