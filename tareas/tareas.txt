@@ -1,0 +1,11 @@
+2. Escribe un programa embebido en una página html que muestre tu nombre por pantalla. Utiliza código PHP.
+3. Modifica el programa anterior para que muestre tu dirección y tu número de teléfono. Cada dato se debe mostrar en una línea diferente. Mezcla de alguna forma las salidas por pantalla, utilizando tanto HTML como PHP.
+ 4. Escribe un programa que muestre la misma página del ejercicio anterior pero usando php para imprimir todo.
+ 5. Escribe un programa que muestre tu horario de clase mediante una tabla. Aunque se puede hacer íntegramente en HTML (igual que los ejercicios anteriores), ve intercalando código HTML y PHP para familiarizarte con este último.
+ 6. Escribe un programa que utilice las variables $x y $y. Asígnales los valores 144 y 999 respectivamente. A continuación, muestra por pantalla el valor de cada variable, la suma, la resta, la división y la multiplicación. 
+ 7. Copia el ejercicio anterior y añade comentarios de una línea y de múltiples líneas.
+ 8. Crea la variable $nombre y asígnale tu nombre completo. Muestra su valor por pantalla de tal forma que el resultado sea el mismo que el del ejercicio 1.
+ 9. Crea las variables $nombre, $direccion y $telefono y asígnales los valores adecuados. Muestra los valores por pantalla de tal forma que el resultado sea el mismo que el del ejercicio 2.
+10. Realiza un conversor de euros a dólares. La cantidad en euros que se quiere convertir deberá estar almacenada en una variable. La tasa de cambio es 1 € = 1,17 $. 
+11. Escribe un programa que pinte por pantalla una pirámide rellena a base de asteriscos. La base de la pirámide debe estar formada por 9 asteriscos.
+12. Igual que el programa anterior, pero esta vez la pirámide estará hueca (se debe ver únicamente el contorno hecho con asteriscos). 
