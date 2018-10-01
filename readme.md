@@ -168,26 +168,15 @@ mostrar_codigo("archivo.php");
 //Funcion para eliminar los caracteres especiales enviador por formulario
 //Tambien elimina los espacios en blanco antes y despues del texto introducido en dicho formulario
 
-function recoge($var,$var2){
+function recoge($var, $var2){
     $tmp = (isset($_REQUEST[$var]))
-        ? trim(htmlspecialchars($_REQUEST[$var], ENT_QUOTES, "UTF-8"))
-        : "";
-		
-		if($var2==""){
-			header("location:#");
-			exit();
-		}
-		
-		if($tmp==""){
-			//Hemos dejado en blanco el input y nos redirecciona a la misma pagina
-			header("location:$var2");
-			exit();
-		}
-		
-		else
-		{
-			return $tmp;
-		}
+    ? trim(htmlspecialchars($_REQUEST[$var], ENT_QUOTES, "UTF-8"))
+    : "";
+    $tmp = str_replace("  ", " ", $nombre);
+    if ($tmp == "") {
+         $tmp = false;
+    }
+    return $tmp;
 }
 
 // Primer parametro: el nombre del input del formulario 
