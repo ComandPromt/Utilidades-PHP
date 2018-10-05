@@ -500,3 +500,35 @@ echo fecha_es();
 ---
 
 [Funciones y consultas BD](https://github.com/ComandPromt/Funciones-y-Consultas-BD)
+
+---
+# Ver archivos por extensión
+---
+- Esta función retorna un array con cada uno de los archivos con la extensión indicada
+- Que hay dentro de una carpeta (pasada como parámetros) 
+```php
+function check_images($path, $extension) {
+    $dir = opendir($path);
+    $files = array();
+    while ($current = readdir($dir)) {
+        if ($current != "." && $current != "..") {
+            if (is_dir($path . $current)) {
+                showFiles($path . $current . '/');
+            } else {
+	    	if($extension=="jpeg"){
+			if (substr($current, -4) == $extension) {
+                    		$files[] = $current;
+                	}
+		}
+		else{
+                	if (substr($current, -3) == $extension) {
+                    		$files[] = $current;
+                	}
+		}
+            }
+        }
+    }
+    return $files;
+}
+check_images("imagenes", "png");
+```
