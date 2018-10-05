@@ -66,7 +66,7 @@ else{
 }
 } 
 
-    $imagen="uploads/".$avatar;
+    $imagen="uploads/avatar.png";
     # ruta de la imagen final, si se pone el mismo nombre que la imagen, esta se sobreescribe 
     $imagen_final=$imagen; 
     $ancho_nuevo=100; 
