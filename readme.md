@@ -434,4 +434,4 @@ echo fecha_es();
 # Redimensionar imágenes
 ---
 
-[Redimensionar imágenes](https://github.com/ComandPromt/Utilidades-PHP/blob/master/redimensionar.php)
+[Redimensionar imágenes](https://github.com/ComandPromt/Redimensionar-imagenes/blob/master/basic/redimensionar.php)
