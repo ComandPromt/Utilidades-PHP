@@ -532,3 +532,8 @@ function check_images($path, $extension) {
 }
 check_images("imagenes", "png");
 ```
+---
+# Video a Frames
+---
+
+[Funciones y consultas BD](https://github.com/ComandPromt/Periquito/tree/master/Periquito/FrameExtractor/examples)
