@@ -1,10 +1,4 @@
-<? 
-    $imagen="uploads/".$avatar;
-    # ruta de la imagen final, si se pone el mismo nombre que la imagen, esta se sobreescribe 
-    $imagen_final=$imagen; 
-    $ancho_nuevo=100; 
-    $alto_nuevo=100; 
-redim ($imagen,$imagen_final,$ancho_nuevo,$alto_nuevo); 
+<?php 
 function redim($ruta1,$ruta2,$ancho,$alto){ 
     # se obtene la dimension y tipo de imagen 
     $datos=getimagesize ($ruta1); 
@@ -71,4 +65,12 @@ else{
 }
 }
 } 
+
+    $imagen="uploads/".$avatar;
+    # ruta de la imagen final, si se pone el mismo nombre que la imagen, esta se sobreescribe 
+    $imagen_final=$imagen; 
+    $ancho_nuevo=100; 
+    $alto_nuevo=100; 
+redim ($imagen,$imagen_final,$ancho_nuevo,$alto_nuevo); 
+
 ?>
