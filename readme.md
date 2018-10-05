@@ -459,7 +459,6 @@ echo fecha_es();
 ---
 # Redimensionar imágenes
 ---
-
 [Redimensionar imágenes](https://github.com/ComandPromt/Redimensionar-imagenes/blob/master/basic/redimensionar.php)
 
 ---
@@ -478,4 +477,26 @@ echo fecha_es();
 - Exporta/importa cualquier tabla en un archivo.sql
 
 [Exportar/importar BD](https://github.com/ComandPromt/Ejemplos-PHP/tree/master/BD)
+
 ---
+# Comprimir en .zip
+---
+[Comprimir en .zip](https://github.com/ComandPromt/Comprimir-en-zip)
+
+---
+# Saca los frames de un gif
+---
+
+[GIF a frames](https://github.com/ComandPromt/Gif-a-frames)
+
+---
+# Crear gif animados a partir de imágenes
+---
+
+[GIF Animator](https://github.com/ComandPromt/AnimGif)
+
+---
+# Funciones y consultas de la base de datos
+---
+
+[GIF Animator](https://github.com/ComandPromt/Funciones-y-Consultas-BD)
