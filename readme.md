@@ -1,8 +1,8 @@
- # Función dos Fechas
-
+---
+# Función dos Fechas
 ---
 Restricciones
----
+
 
 - Esta función calcula el tiempo que ha pasado entre dos fechas ( en años meses y días)
 
@@ -57,26 +57,32 @@ Restricciones
 [Extraer el codigo fuente de una pagina](https://github.com/ComandPromt/Utilidades-PHP/blob/master/codigo_fuente_de_pagina.php)
 ---
  # Conversor de grados Celcius a Farengeith y viceversa
+---
  - Extrae el número de una BD
 [Celcius 2 Farengeith](https://github.com/ComandPromt/Utilidades-PHP/blob/master/grados_celcius_to_farengeith.php)
 ---
  # Marca de agua
+---
  - Crea una marca de agua en una imagen
 [Marca de agua](https://github.com/ComandPromt/Utilidades-PHP/blob/master/marca_de_agua.php)
 ---
  # Extraer valores de un select sin formulario
+---
 [Extraer valores de select sin formulario](https://github.com/ComandPromt/Utilidades-PHP/blob/master/select_to_php_none_form.php)
 ---
  # Subida de ficheros
+---
  - Create a folder called uploads
  - Crea una carpeta llama uploads
 [Subida de ficheros con formularios](https://github.com/ComandPromt/Utilidades-PHP/blob/master/subir.php)
 ---
 # Subida múltiple
+---
 - Sube varios ficheros a través de un formulario
 [Subida múltiple](https://github.com/ComandPromt/Utilidades-PHP/blob/master/subida_multiple.php)
 ---
 # Funcion esEntero
+---
 ```php
 function es_entero($number){
 
@@ -95,6 +101,7 @@ function es_entero($number){
 ```
 ---
 # Funcion Ordenar Numeros
+---
 ```php
 function ordenar_numeros($porciones,$separador){
 	
