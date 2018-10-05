@@ -1,6 +1,12 @@
 ---
+Edad en días
+---
+[Dos fechas](https://github.com/ComandPromt/Edad-en-dias)
+
+---
 # Función dos Fechas
 ---
+
 ## Restricciones
 
 - Esta función calcula el tiempo que ha pasado entre dos fechas ( en años meses y días)
@@ -20,6 +26,7 @@
 ---
  # Comprobar enlaces
 ---
+
  - Verifica la existenciade una página web (si esta en linea)
  
 [Comprobar enlaces](https://github.com/ComandPromt/Utilidades-PHP/blob/master/Comprobador_enlaces_con_formulario.php)
@@ -27,6 +34,7 @@
 ---
  # Redondeo y truncamiento
 --- 
+
  - Función para redondear y truncar
  
  [Redondeo y truncamiento](https://github.com/ComandPromt/Utilidades-PHP/blob/master/Redondeo_y_truncamiento.php)
@@ -34,13 +42,15 @@
 ---
   # Tablas de multiplicar
 ---
- - Muestra la tabla de multiplicar del número elegido
+
+- Muestra la tabla de multiplicar del número elegido
  
  [Tabla de multiplicar](https://github.com/ComandPromt/Utilidades-PHP/blob/master/Tablas%20de%20multiplicar.php)
  
 ---
  # Antispam
 ---
+
  - Di adiós a los spams
  
  [Antispam](https://github.com/ComandPromt/Utilidades-PHP/blob/master/antispam.php)
@@ -54,35 +64,41 @@
 ---
  # Velocidad de transferencia
 ---
+
  - Calcula la velocidad de transferencia
 [Velocidad de transferencia](https://github.com/ComandPromt/Utilidades-PHP/blob/master/calcular_velocidad_transferencia.php)
 
 ---
  # Código fuente de página
 ---
+
  - Extrae el código fuente de página
 [Extraer el codigo fuente de una pagina](https://github.com/ComandPromt/Utilidades-PHP/blob/master/codigo_fuente_de_pagina.php)
 
 ---
  # Conversor de grados Celcius a Farengeith y viceversa
 ---
+
  - Extrae el número de una BD
 [Celcius 2 Farengeith](https://github.com/ComandPromt/Utilidades-PHP/blob/master/grados_celcius_to_farengeith.php)
 
 ---
  # Marca de agua
 ---
+
  - Crea una marca de agua en una imagen
 [Marca de agua](https://github.com/ComandPromt/Utilidades-PHP/blob/master/marca_de_agua.php)
 
 ---
  # Extraer valores de un select sin formulario
 ---
+
 [Extraer valores de select sin formulario](https://github.com/ComandPromt/Utilidades-PHP/blob/master/select_to_php_none_form.php)
 
 ---
  # Subida de ficheros
 ---
+
  - Create a folder called uploads
  - Crea una carpeta llama uploads
 [Subida de ficheros con formularios](https://github.com/ComandPromt/Utilidades-PHP/blob/master/subir.php)
@@ -90,12 +106,14 @@
 ---
 # Subida múltiple
 ---
+
 - Sube varios ficheros a través de un formulario
 [Subida múltiple](https://github.com/ComandPromt/Utilidades-PHP/blob/master/subida_multiple.php)
 
 ---
 # Funcion esEntero
 ---
+
 ```php
 function es_entero($number){
 
@@ -115,6 +133,7 @@ function es_entero($number){
 ---
 # Funcion Ordenar Numeros
 ---
+
 ```php
 function ordenar_numeros($porciones,$separador){
 	
@@ -160,6 +179,7 @@ function ordenar_numeros($porciones,$separador){
 ---
 # Funcion Mostrar Codigo
 ---
+
 ```php
 function mostrar_codigo($file){ 
   $lines = implode(range(1, count(file($file))), '<br />'); 
@@ -188,6 +208,7 @@ mostrar_codigo("archivo.php");
 ---
 # Funcion Recoge
 ---
+
 ```php
 //Funcion para eliminar los caracteres especiales enviador por formulario
 //Tambien elimina los espacios en blanco antes y despues del texto introducido en dicho formulario
@@ -213,6 +234,7 @@ print $nombre   = recoge("nombre","formulario.php");
 ---
 # Pasar la primera letra a mayuscula
 ---
+
 ```php
 function pasar_la_primera_letra_a_mayuscula($letra){
 
@@ -240,6 +262,7 @@ return $letra;
 ---
 # Comprobar enlace en linea
 ---
+
 ```php
 function verificar_url($url){ 
     //abrimos el archivo en lectura 
@@ -256,6 +279,7 @@ function verificar_url($url){
 ---
 # Contiene cadena
 ---
+
 ```php
 function contiene_palabra($texto, $palabra){
     return preg_match('*\b' . preg_quote($palabra) . '\b*i', $texto);
@@ -264,6 +288,7 @@ function contiene_palabra($texto, $palabra){
 ---
 # Imprimir fecha actual
 ---
+
 ```php
 date_default_timezone_set('Europe/Madrid');
 
@@ -355,6 +380,7 @@ function fecha_es($dia, $mes){
 ---
 # Funcion Ver Fecha v2
 ---
+
 ```php
 function dia_es($dia_num) {
     switch ($dia_num) {
