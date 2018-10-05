@@ -1,8 +1,7 @@
 ---
 # Función dos Fechas
 ---
-Restricciones
-
+## Restricciones
 
 - Esta función calcula el tiempo que ha pasado entre dos fechas ( en años meses y días)
 
@@ -37,7 +36,7 @@ Restricciones
  [Tabla de multiplicar](https://github.com/ComandPromt/Utilidades-PHP/blob/master/Tablas%20de%20multiplicar.php)
 ---
  # Antispam
- ---
+---
  - Di adiós a los spams
  
  [Antispam](https://github.com/ComandPromt/Utilidades-PHP/blob/master/antispam.php)
@@ -416,3 +415,9 @@ function fecha_es() {
 }
 echo fecha_es();
 ```
+
+---
+# Redimensionar imágenes
+---
+
+[Redimensionar imágenes](https://github.com/ComandPromt/Utilidades-PHP/blob/master/redimensionar.php)
