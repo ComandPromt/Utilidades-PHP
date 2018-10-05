@@ -499,4 +499,4 @@ echo fecha_es();
 # Funciones y consultas de la base de datos
 ---
 
-[GIF Animator](https://github.com/ComandPromt/Funciones-y-Consultas-BD)
+[Funciones y consultas BD](https://github.com/ComandPromt/Funciones-y-Consultas-BD)
