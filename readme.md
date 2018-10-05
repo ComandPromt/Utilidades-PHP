@@ -461,3 +461,10 @@ echo fecha_es();
 ---
 
 [Redimensionar imágenes](https://github.com/ComandPromt/Redimensionar-imagenes/blob/master/basic/redimensionar.php)
+
+---
+# Tareas
+---
+
+# Crea tantos archivos .php como ejercicios haya en el archivo tareas.txt
+- Dentro de cada archivo .php se crea un comentario donde está el enunciado del ejercicio
