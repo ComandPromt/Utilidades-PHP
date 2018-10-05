@@ -466,5 +466,7 @@ echo fecha_es();
 # Tareas
 ---
 
-# Crea tantos archivos .php como ejercicios haya en el archivo tareas.txt
+- Crea tantos archivos .php como ejercicios haya en el archivo tareas.txt
 - Dentro de cada archivo .php se crea un comentario donde está el enunciado del ejercicio
+
+[Tareas](https://github.com/ComandPromt/Utilidades-PHP/blob/master/tareas/index.php)
