@@ -1,7 +1,7 @@
 ---
 Edad en días
 ---
-[Dos fechas](https://github.com/ComandPromt/Edad-en-dias)
+[Edad en dias](https://github.com/ComandPromt/Edad-en-dias)
 
 ---
 # Función dos Fechas
