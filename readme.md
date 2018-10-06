@@ -537,3 +537,9 @@ check_images("imagenes", "png");
 ---
 
 [Funciones y consultas BD](https://github.com/ComandPromt/Periquito/tree/master/Periquito/FrameExtractor/examples)
+
+---
+# Crear imagen con logo
+---
+
+[Crear imagen con logo](https://github.com/ComandPromt/Utilidades-PHP/blob/master/crear_imagen_con_logo.php)
