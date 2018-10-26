@@ -229,7 +229,7 @@ function recoge($var){
 // Si el formualario y la funcion estan en el mismo archivo
 // Devemos dejar en blanco el segundo parametro ej. recoge("nombre_input","");
 
-print $nombre   = recoge("nombre","formulario.php");
+print $nombre   = recoge("nombre");
 ```
 ---
 # Pasar la primera letra a mayuscula
