@@ -21,7 +21,11 @@ function enviar($para, $asunto, $mensaje, $archivo,$remitente){
     $mail->AddAddress($para);
     $mail->Subject = $asunto;
     $mail->Body = $mensaje;
-
+    /*
+    Añadir una imagen incrustada
+    $mail->AddEmbeddedImage("rocks.png", "my-attach", "rocks.png"); 
+    $mail->Body = 'Embedded Image: <img alt="PHPMailer" src="cid:my-attach"> Here is an image!'; 
+    */
 //Para adjuntar archivo
     $mail->AddAttachment($archivo['tmp_name'], $archivo['name']);
     $mail->MsgHTML($mensaje);
