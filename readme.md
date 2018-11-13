@@ -543,3 +543,9 @@ check_images("imagenes", "png");
 ---
 
 [Crear imagen con logo](https://github.com/ComandPromt/Utilidades-PHP/blob/master/crear_imagen_con_logo.php)
+
+---
+# Envio de correos electrónicos
+---
+
+[Envio de correos](https://github.com/ComandPromt/Utilidades-PHP/tree/master/Envio%20correos)
