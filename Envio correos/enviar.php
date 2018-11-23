@@ -1,6 +1,23 @@
 <?php
+include('config.php');
 
-function enviar($para, $asunto, $mensaje, $archivo,$remitente){
+function enviar($para, $asunto, $mensaje, $archivo,$remitente,$tipo){
+
+switch($tipo){
+
+    case 'gmail':
+    $seguridad="ssl";
+    $host="smtp.gmail.com";
+    $puerto=465;
+    break;
+
+    case 'hotmail':
+    $seguridad="tls";
+    $host="smtp.live.com";
+    $puerto=587;
+    break;
+
+}
 
     include_once 'class.phpmailer.php';
     include_once 'class.smtp.php';
@@ -8,35 +25,35 @@ function enviar($para, $asunto, $mensaje, $archivo,$remitente){
     $mail = new PHPMailer();
     $mail->IsSMTP();
     $mail->SMTPAuth = true;
-    $mail->SMTPSecure = "ssl";
-    $mail->Host = "smtp.gmail.com";
-    $mail->Port = 465;
 
-//Nuestra cuenta
-    $mail->Username = 'email@gmail.com';
-    $mail->Password = 'Password'; //Su password
+    $mail->SMTPSecure = $seguridad;
+    $mail->Host = $host;
+    $mail->Port = $puerto;
 
-//Agregar destinatario
+    $mail->Username = 'user@email.com';
+    $mail->Password = 'pass'; 
+
     $mail->FromName = $remitente;
     $mail->AddAddress($para);
     $mail->Subject = $asunto;
     $mail->Body = $mensaje;
-    /*
-    Añadir una imagen incrustada
-    $mail->AddEmbeddedImage("rocks.png", "my-attach", "rocks.png"); 
-    $mail->Body = 'Embedded Image: <img alt="PHPMailer" src="cid:my-attach"> Here is an image!'; 
+
+    /*  Añadir una imagen incrustada
+        $mail->AddEmbeddedImage("rocks.png", "my-attach", "rocks.png"); 
+        $mail->Body = 'Embedded Image: <img alt="PHPMailer" src="cid:my-attach">'; 
     */
-//Para adjuntar archivo
+
     $mail->AddAttachment($archivo['tmp_name'], $archivo['name']);
     $mail->MsgHTML($mensaje);
-
-//Avisar si fue enviado o no y dirigir al index
+    $mail->From = $mail->Username;
 
     if ($mail->Send()) {
         echo '<script type="text/javascript">
             alert("Enviado Correctamente");
          </script>';
-    } else {
+    }
+    
+    else {
         echo '<script type="text/javascript">
             alert("NO ENVIADO, intentar de nuevo");
          </script>';
@@ -44,7 +61,7 @@ function enviar($para, $asunto, $mensaje, $archivo,$remitente){
 }
 
 if(isset($_POST['enviar'])){
-    enviar($_POST['email'], $_POST['asunto'], $_POST['mensaje'], $_FILES['hugo'],"Test");
+    enviar($_POST['email'], $_POST['asunto'], $_POST['mensaje'], $_FILES['hugo'],"Test","gmail");
 }
 
 ?>
@@ -60,7 +77,6 @@ if(isset($_POST['enviar'])){
     </head>
     <body>
         <div class="wrap">
-
            <section id="principal">
                 <form id="formulario" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" enctype="multipart/form-data">
                     <div class="campos">
@@ -75,13 +91,10 @@ if(isset($_POST['enviar'])){
                         <label>Mensaje:</label>
                         <textarea name="mensaje"></textarea><br/><br/>
                     </div>
-
                     <label>Imagen:</label>
                     <input type="file" name="hugo" id="imagen" />
-
                     <input id="submit" type="submit" name="enviar" value="Enviar mail">
                 </form>
-
             </section>
         </div>
     </body>
