@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('Europe/Madrid');
 function esBisiesto($year=NULL) {
 	if($year>=3344){
 		return true;
