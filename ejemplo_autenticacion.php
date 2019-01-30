@@ -1,51 +1,52 @@
 <?php
-$users = array();
-$users['dwes'] = "63a9f0ea7bb98050796b649e85481845"; // root
-$users['admin'] = "81dc9bdb52d04dc20036dbd8313ed055"; // 1234
-if (!isset($_SERVER['PHP_AUTH_USER']) || !isset($_SERVER['PHP_AUTH_PW'])){
-	header('WWW-Authenticate: Basic realm="Contenido restringido"');
-	header("HTTP/1.0 401 Unauthorized");
-	exit;
+$dominio = 'Area restringida';
+
+// usuario => contraseña
+$usuarios = array('admin' => 'micontraseña', 'invitado' => 'invitado');
+
+
+if (empty($_SERVER['PHP_AUTH_DIGEST'])) {
+    header('HTTP/1.1 401 Unauthorized');
+    header('WWW-Authenticate: Digest realm="'.$dominio.
+           '",qop="auth",nonce="'.uniqid().'",opaque="'.md5($dominio).'"');
+
+    die('Texto a enviar si el usuario pulsa el botón Cancelar');
 }
-if (!array_key_exists($_SERVER["PHP_AUTH_USER"], $users) || $users[$_SERVER["PHP_AUTH_USER"]] != md5($_SERVER["PHP_AUTH_PW"])) {
-    header('WWW-Authenticate: Basic realm="Contenido restringido"');
-	header("HTTP/1.0 401 Unauthorized");
-	echo "Debes introducir un usuario y contraseña!";
-	exit;
+
+
+// Analizar la variable PHP_AUTH_DIGEST
+if (!($datos = analizar_http_digest($_SERVER['PHP_AUTH_DIGEST'])) ||
+    !isset($usuarios[$datos['username']]))
+    die('Credenciales incorrectas');
+
+
+// Generar una respuesta válida
+$A1 = md5($datos['username'] . ':' . $dominio . ':' . $usuarios[$datos['username']]);
+$A2 = md5($_SERVER['REQUEST_METHOD'].':'.$datos['uri']);
+$respuesta_válida = md5($A1.':'.$datos['nonce'].':'.$datos['nc'].':'.$datos['cnonce'].':'.$datos['qop'].':'.$A2);
+
+if ($datos['response'] != $respuesta_válida)
+    die('Credenciales incorrectas');
+
+// Todo bien, usuario y contraseña válidos
+echo 'Se ha identificado como: ' . $datos['username'];
+
+
+// Función para analizar la cabecera de autenticación HTTP
+function analizar_http_digest($txt)
+{
+    // Protección contra datos ausentes
+    $partes_necesarias = array('nonce'=>1, 'nc'=>1, 'cnonce'=>1, 'qop'=>1, 'username'=>1, 'uri'=>1, 'response'=>1);
+    $datos = array();
+    $claves = implode('|', array_keys($partes_necesarias));
+
+    preg_match_all('@(' . $claves . ')=(?:([\'"])([^\2]+?)\2|([^\s,]+))@', $txt, $coincidencias, PREG_SET_ORDER);
+
+    foreach ($coincidencias as $c) {
+        $datos[$c[1]] = $c[3] ? $c[3] : $c[4];
+        unset($partes_necesarias[$c[1]]);
+    }
+
+    return $partes_necesarias ? false : $datos;
 }
 ?>
-<!DOCTYPE html >
-<html>
-<head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>
-Ejemplo Tema 3: Autenticacion
-</title>
-</head>
-<body>
-<?php
-session_start();
-
-if(isset($_POST['enviar'])){
-	session_destroy();
-}
-$_SESSION['visitas']=array();
-$_SESSION['visitas'][]=date('d/m/Y')." ".date('H:i:s');
-
-if(!isset($_COOKIE['fecha_usuario'])){
-	print "Bienvenido a la web!";
-	setcookie("fecha_usuario", date('d/m/Y')." ".date('H:i:s'), time()+3600);
-
-	
-}
-else{
-	//print $_COOKIE['fecha_usuario'];
-	for($x=0;$x<count($_SESSION['visitas']);$x++){
-			print $_SESSION['visitas'][$x]."<br/>";
-		}
-}
-
-?>
-<input name="enviar" value="Borrar sesion" type="submit"></input>
-</body>
-</html>
