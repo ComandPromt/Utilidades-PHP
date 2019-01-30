@@ -6,6 +6,8 @@ Edad en días
 ---
 # Función dos Fechas
 ---
+![Preview 1](dos_fechas_1.png)
+![Preview 2](dos_fechas_2.png)
 
 ## Restricciones
 
