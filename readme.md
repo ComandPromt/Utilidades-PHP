@@ -538,7 +538,7 @@ check_images("imagenes", "png");
 # Video a Frames
 ---
 
-[Funciones y consultas BD](https://github.com/ComandPromt/Periquito/tree/master/Periquito/FrameExtractor/examples)
+[Video a Frames](https://github.com/ComandPromt/Periquito/tree/master/Periquito/FrameExtractor/examples)
 
 ---
 # Crear imagen con logo
@@ -556,5 +556,3 @@ check_images("imagenes", "png");
 Ejemplo de autenticación
 ---
 [Ejemplo de autenticación](https://github.com/ComandPromt/Utilidades-PHP/blob/master/ejemplo_autenticacion.php)
-
-[Edad en dias](https://github.com/ComandPromt/Edad-en-dias)
