@@ -549,3 +549,10 @@ check_images("imagenes", "png");
 ---
 
 [Envio de correos](https://github.com/ComandPromt/Utilidades-PHP/tree/master/Envio%20correos)
+
+---
+Ejemplo de autenticación
+---
+[Ejemplo de autenticación](https://github.com/ComandPromt/Utilidades-PHP/blob/master/ejemplo_autenticacion.php)
+
+[Edad en dias](https://github.com/ComandPromt/Edad-en-dias)
