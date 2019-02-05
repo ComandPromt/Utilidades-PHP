@@ -94,12 +94,13 @@ Edad en días
 ---
  # Extraer valores de un select sin formulario
 ---
-
+![None Form](preview/chose.png)
 [Extraer valores de select sin formulario](https://github.com/ComandPromt/Utilidades-PHP/blob/master/select_to_php_none_form.php)
 
 ---
  # Subida de ficheros
 ---
+![Subida](preview/subida.png)
 
  - Create a folder called uploads
  - Crea una carpeta llama uploads
@@ -108,7 +109,7 @@ Edad en días
 ---
 # Subida múltiple
 ---
-
+![Subida](preview/cantidad.png)
 - Sube varios ficheros a través de un formulario
 [Subida múltiple](https://github.com/ComandPromt/Utilidades-PHP/blob/master/subida_multiple.php)
 
