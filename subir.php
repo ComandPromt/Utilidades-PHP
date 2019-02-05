@@ -14,6 +14,9 @@ body{font-size:1.2em;}
 <input type='submit' value='Subir archivo'>
 </form>
 <?php 
+if(!file_exists('uploads')){
+	mkdir('uploads');
+}
 error_reporting(0);
 $target_path = "uploads/";
 $avatar=$_FILES['uploadedfile']['name'];
