@@ -28,7 +28,7 @@ Edad en días
 ---
  # Comprobar enlaces
 ---
-
+![Preview](previews/enlaces.png)
  - Verifica la existenciade una página web (si esta en linea)
  
 [Comprobar enlaces](https://github.com/ComandPromt/Utilidades-PHP/blob/master/Comprobador_enlaces_con_formulario.php)
@@ -36,7 +36,7 @@ Edad en días
 ---
  # Redondeo y truncamiento
 --- 
-
+![Preview](previews/red_trunc.png)
  - Función para redondear y truncar
  
  [Redondeo y truncamiento](https://github.com/ComandPromt/Utilidades-PHP/blob/master/Redondeo_y_truncamiento.php)
@@ -44,7 +44,7 @@ Edad en días
 ---
   # Tablas de multiplicar
 ---
-
+![Preview](previews/tablas.png)
 - Muestra la tabla de multiplicar del número elegido
  
  [Tabla de multiplicar](https://github.com/ComandPromt/Utilidades-PHP/blob/master/Tablas%20de%20multiplicar.php)
@@ -60,20 +60,20 @@ Edad en días
 ---
  # Calculo de la media de valores variables
 ---
-
+![Preview](previews/media.png)
 [Calcular la media de valores variables](https://github.com/ComandPromt/Utilidades-PHP/blob/master/calcular_media_valores_variables.php)
 
 ---
  # Velocidad de transferencia
 ---
-
+![Preview](previews/trans.png)
  - Calcula la velocidad de transferencia
 [Velocidad de transferencia](https://github.com/ComandPromt/Utilidades-PHP/blob/master/calcular_velocidad_transferencia.php)
 
 ---
  # Código fuente de página
 ---
-
+![Preview](previews/fuente.png)
  - Extrae el código fuente de página
 [Extraer el codigo fuente de una pagina](https://github.com/ComandPromt/Utilidades-PHP/blob/master/codigo_fuente_de_pagina.php)
 
@@ -83,13 +83,6 @@ Edad en días
 
  - Extrae el número de una BD
 [Celcius 2 Farengeith](https://github.com/ComandPromt/Utilidades-PHP/blob/master/grados_celcius_to_farengeith.php)
-
----
- # Marca de agua
----
-
- - Crea una marca de agua en una imagen
-[Marca de agua](https://github.com/ComandPromt/Utilidades-PHP/blob/master/marca_de_agua.php)
 
 ---
  # Extraer valores de un select sin formulario
@@ -535,6 +528,7 @@ function check_images($path, $extension) {
 }
 check_images("imagenes", "png");
 ```
+
 ---
 # Video a Frames
 ---
@@ -544,12 +538,13 @@ check_images("imagenes", "png");
 ---
 # Crear imagen con logo
 ---
-
+![Preview](previews/logo.png)
 [Crear imagen con logo](https://github.com/ComandPromt/Utilidades-PHP/blob/master/crear_imagen_con_logo.php)
 
 ---
 # Envio de correos electrónicos
 ---
+![Preview](previews/email.png)
 
 [Envio de correos](https://github.com/ComandPromt/Utilidades-PHP/tree/master/Envio%20correos)
 
