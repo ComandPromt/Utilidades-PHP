@@ -5,8 +5,8 @@ Edad en días
 
 # Enter a date and it will tell you the years, months and days that have passed
 
-![Preview 1](preview.png)
-![Preview 2](preview2.png)
+![Preview 1](https://github.com/ComandPromt/Edad-en-dias/preview.png)
+![Preview 2](https://github.com/ComandPromt/Edad-en-dias/preview2.png)
 
 [Edad en dias](https://github.com/ComandPromt/Edad-en-dias)
 
