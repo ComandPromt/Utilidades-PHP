@@ -61,6 +61,7 @@ Edad en días
  # Calculo de la media de valores variables
 ---
 ![Preview](previews/media.png)
+
 [Calcular la media de valores variables](https://github.com/ComandPromt/Utilidades-PHP/blob/master/calcular_media_valores_variables.php)
 
 ---
@@ -68,6 +69,7 @@ Edad en días
 ---
 ![Preview](previews/trans.png)
  - Calcula la velocidad de transferencia
+ 
 [Velocidad de transferencia](https://github.com/ComandPromt/Utilidades-PHP/blob/master/calcular_velocidad_transferencia.php)
 
 ---
@@ -75,6 +77,7 @@ Edad en días
 ---
 ![Preview](previews/fuente.png)
  - Extrae el código fuente de página
+ 
 [Extraer el codigo fuente de una pagina](https://github.com/ComandPromt/Utilidades-PHP/blob/master/codigo_fuente_de_pagina.php)
 
 
@@ -82,6 +85,7 @@ Edad en días
  # Extraer valores de un select sin formulario
 ---
 ![None Form](previews/chose.png)
+
 [Extraer valores de select sin formulario](https://github.com/ComandPromt/Utilidades-PHP/blob/master/select_to_php_none_form.php)
 
 ---
@@ -91,6 +95,7 @@ Edad en días
 
  - Create a folder called uploads
  - Crea una carpeta llama uploads
+ 
 [Subida de ficheros con formularios](https://github.com/ComandPromt/Utilidades-PHP/blob/master/subir.php)
 
 ---
@@ -98,6 +103,7 @@ Edad en días
 ---
 ![Subida](previews/cantidad.png)
 - Sube varios ficheros a través de un formulario
+
 [Subida múltiple](https://github.com/ComandPromt/Utilidades-PHP/blob/master/subida_multiple.php)
 
 ---
@@ -533,6 +539,7 @@ check_images("imagenes", "png");
 # Crear imagen con logo
 ---
 ![Preview](previews/logo.png)
+
 [Crear imagen con logo](https://github.com/ComandPromt/Utilidades-PHP/blob/master/crear_imagen_con_logo.php)
 
 ---
@@ -546,4 +553,5 @@ check_images("imagenes", "png");
 Ejemplo de autenticación
 ---
 ![Preview](previews/credenciales.png)
+
 [Ejemplo de autenticación](https://github.com/ComandPromt/Utilidades-PHP/blob/master/ejemplo_autenticacion.php)
