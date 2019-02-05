@@ -1,6 +1,3 @@
-<?
-include 'cabecera_lateral_2.php';
-?>
 
 <form name="test" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post">
 
@@ -264,9 +261,5 @@ print "<td>$vel1</td>
 
 </table>";
 	}
-
-include 'estatico.php';
-
-
 
 ?>
