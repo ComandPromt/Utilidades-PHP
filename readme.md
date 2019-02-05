@@ -545,4 +545,5 @@ check_images("imagenes", "png");
 ---
 Ejemplo de autenticación
 ---
+![Preview](previews/credenciales.png)
 [Ejemplo de autenticación](https://github.com/ComandPromt/Utilidades-PHP/blob/master/ejemplo_autenticacion.php)
