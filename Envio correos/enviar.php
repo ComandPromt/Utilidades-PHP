@@ -1,5 +1,4 @@
 <?php
-include('config.php');
 
 function enviar($para, $asunto, $mensaje, $archivo,$remitente,$tipo){
 
