@@ -1,4 +1,4 @@
-<form action="n19_2.php" method="post">
+<form action="<?php echo $_SERVER['PHP_SELF']; ?>"  method="post">
 <br/>
 
 <strong>Desde la tabla del &nbsp;</strong><input  style="text-align: center" type="number" name="numero" placeholder="Semi Obligatorio 1">
