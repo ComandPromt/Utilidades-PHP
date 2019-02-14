@@ -1,5 +1,11 @@
 ---
-Edad en días
+# Geo location
+---
+![Preview](previews/geo.png)
+[Edad en dias](https://github.com/ComandPromt/Utilidades-PHP/tree/master/GEO)
+
+---
+# Edad en días
 ---
 # Introduce una fecha y te dira los años, meses y dias que han pasado
 
