@@ -2,7 +2,7 @@
 
 function comprobar_si_existe_email($email){
 
-    $key = "RAo7L07adVEweWS0hObUB";
+    $key = "API KEY HERE";
     $url = "https://app.verificaremails.com/api/verifyEmail?secret=".$key."&email=".$email;
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
