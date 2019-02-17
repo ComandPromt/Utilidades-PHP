@@ -26,11 +26,11 @@ $respuesta=(array)json_decode($json);
 
 if($respuesta["valid"] || $respuesta["valid"]=="true"){
 	
-	return "si";
+	return true;
 }
 else{
 
-	return "no";
+	return false;
 }
 
 
