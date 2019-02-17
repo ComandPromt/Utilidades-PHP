@@ -1,7 +1,43 @@
 ---
 # Comprobar si un existe un email
 ---
-[Email Checker](https://github.com/ComandPromt/Utilidades-PHP/blob/master/comprobar_si_existe_email.php)
+~~~php
+function comprobar_si_existe_email($email){
+$respuesta=array();
+
+    $url = 'https://mailjagger.ga/api/validate/'.$email;
+
+	$ch = curl_init($url);
+
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($ch, CURLOPT_HTTPGET, TRUE);
+curl_setopt($ch, CURLOPT_HTTPHEADER,array('Content-Type: application/json'));
+	
+curl_exec($ch);
+
+$json=ob_get_contents();
+
+curl_close($ch);
+ob_get_clean();
+$respuesta=(array)json_decode($json);
+
+
+
+if($respuesta["valid"] || $respuesta["valid"]=="true"){
+	
+	return "si";
+}
+else{
+
+	return "no";
+}
+
+
+}
+~~~
+
+[Other Example](https://github.com/ComandPromt/Utilidades-PHP/blob/master/comprobar_si_existe_email.php)
 
 ---
 # Geo location
