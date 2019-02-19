@@ -1,66 +1,57 @@
 <?php
-
+date_default_timezone_set('Europe/Madrid');
 function enviar($para, $asunto, $mensaje, $archivo,$remitente,$tipo){
 
-switch($tipo){
+  switch($tipo){
+  
+      case 'gmail':
+      $seguridad="ssl";
+      $host="smtp.gmail.com";
+      $puerto=465;
+      break;
+  
+      case 'hotmail':
+      $seguridad="tls";
+      $host="smtp.live.com";
+      $puerto=587;
+      break;
+  
+  }
+  
+      include_once 'class.phpmailer.php';
+      include_once 'class.smtp.php';
+  
+      $mail = new PHPMailer();
+      $mail->IsSMTP();
+      $mail->SMTPAuth = true;
+  
+      $mail->SMTPSecure = $seguridad;
+      $mail->Host = $host;
+      $mail->Port = $puerto;
+  
+      $mail->Username = 'user@gmail.com';
+      $mail->Password = 'password'; 
+  
+      $mail->FromName = $remitente;
+      $mail->AddAddress($para);
+      $mail->Subject = $asunto;
+      $mail->Body = $mensaje;
+  
+      /*  Añadir una imagen incrustada
+          $mail->AddEmbeddedImage("rocks.png", "my-attach", "rocks.png"); 
+          $mail->Body = 'Embedded Image: <img alt="PHPMailer" src="cid:my-attach">'; 
+      */
 
-    case 'gmail':
-    $seguridad="ssl";
-    $host="smtp.gmail.com";
-    $puerto=465;
-    break;
-
-    case 'hotmail':
-    $seguridad="tls";
-    $host="smtp.live.com";
-    $puerto=587;
-    break;
-
-}
-
-    include_once 'class.phpmailer.php';
-    include_once 'class.smtp.php';
-
-    $mail = new PHPMailer();
-    $mail->IsSMTP();
-    $mail->SMTPAuth = true;
-
-    $mail->SMTPSecure = $seguridad;
-    $mail->Host = $host;
-    $mail->Port = $puerto;
-
-    $mail->Username = 'user@email.com';
-    $mail->Password = 'pass'; 
-
-    $mail->FromName = $remitente;
-    $mail->AddAddress($para);
-    $mail->Subject = $asunto;
-    $mail->Body = $mensaje;
-
-    /*  Añadir una imagen incrustada
-        $mail->AddEmbeddedImage("rocks.png", "my-attach", "rocks.png"); 
-        $mail->Body = 'Embedded Image: <img alt="PHPMailer" src="cid:my-attach">'; 
-    */
-
-    $mail->AddAttachment($archivo['tmp_name'], $archivo['name']);
-    $mail->MsgHTML($mensaje);
-    $mail->From = $mail->Username;
-
-    if ($mail->Send()) {
-        echo '<script type="text/javascript">
-            alert("Enviado Correctamente");
-         </script>';
-    }
+    //  $mail->AddAttachment($archivo['tmp_name'], $archivo['name']);
+      //$mail->MsgHTML($mensaje);
+      $mail->From = $mail->Username;
+  $mail->Send();
     
-    else {
-        echo '<script type="text/javascript">
-            alert("NO ENVIADO, intentar de nuevo");
-         </script>';
-    }
-}
+  }
 
 if(isset($_POST['enviar'])){
-    enviar($_POST['email'], $_POST['asunto'], $_POST['mensaje'], $_FILES['hugo'],"Test","gmail");
+	print $_POST['mensaje'];
+    enviar($_POST['email'], $_POST['asunto'], $_POST['mensaje'], '',"Test","gmail");
 }
 
 ?>
