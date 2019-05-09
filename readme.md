@@ -1,3 +1,24 @@
+
+---
+# Comprobar si una URL
+---
+
+~~~php
+function url_exists($url){
+	
+$file_headers = @get_headers($url);
+
+if(strpos($file_headers[0],"200 OK")==false){
+	return false;
+}
+
+else{
+	return true;
+}
+
+}
+~~~
+
 ---
 # Comprobar si un existe un email
 ---
