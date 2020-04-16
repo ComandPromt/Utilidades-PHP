@@ -1,6 +1,6 @@
 
 ---
-# Comprobar si una URL
+# Comprobar si existe una URL
 ---
 
 ~~~php
